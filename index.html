@@ -53,6 +53,11 @@
           CivMap.FeaturesPlugin,
           CivMap.WaypointsPlugin,
         ],
+        plugins: {
+          features: {
+            featureGroup: {"features":[{"properties":{"name":"Quadrant cross"},"geometry":{"type":"line","positions":[[[0,-11000],[0,-2000]],[[0,11000],[0,2000]],[[-11000,0],[-2000,0]],[[11000,0],[2000,0]]]}},{"properties":{"name":"World border"},"geometry":{"type":"circle","radius":13000,"center":[0,0]}}],"properties":{"name":"Overlay"}},
+          },
+        },
       },
     }, function (ref) { window.civMap = ref; });
   </script>
